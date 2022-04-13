@@ -1,4 +1,4 @@
-(function (window) {
+/*(function (window) {
     'use strict'
 
     const FORM_SELECTOR = '[data-shopping-order="form"]';
@@ -12,7 +12,7 @@
     let FormHandler = App.FormHandler;
     let CheckList = App.CheckList;
 
-    let myTruck = new Truck('12345', new DataStore());
+   let myTruck = new Truck('12345', new DataStore());
     let checkList = new CheckList(CHECKLIST_SELECTOR);
 
     window.myTruck = myTruck;
