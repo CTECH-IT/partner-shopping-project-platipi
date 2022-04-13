@@ -1,4 +1,4 @@
-/*(function (window) {
+(function (window) {
     'use strict'
 
     const FORM_SELECTOR = '[data-shopping-order="form"]';
