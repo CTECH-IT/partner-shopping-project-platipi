@@ -3,33 +3,33 @@
 
     let App = window.App || {};
 
-    function Truck(truckId, db) {
-        this.truckId = truckId;
+    function Cart(cartId, db) {
+        this.cartId = cartId;
         this.db = db;
     }
 
-    Truck.prototype.createOrder = function (order) {
+    Cart.prototype.createOrder = function (order) {
         console.log('Adding order for ' + order.emailAddress);
         this.db.add(order.emailAddress, order);
     }
 
-    Truck.prototype.deliverOrder = function (customerId) {
+    Cart.prototype.deliverOrder = function (customerId) {
         console.log('Delivering order for ' + customerId);
         this.db.remove(customerId);
     }
 
-    Truck.prototype.printOrder = function() {
+    Cart.prototype.printOrder = function() {
 
         //get all (keys), emails
         let customerIdArray = Object.keys(this.db.getAll());
 
-        console.log('Truck #' + this.truckId + ' has pending orders:');
+        console.log('Cart #' + this.cartId + ' has pending orders:');
         // look through emaisl and get associated order
         customerIdArray.forEach(function (id) {
             console.log(this.db.get(id));
         }.bind(this));
     }
 
-    App.Truck = Truck;
+    App.Cart = Cart;
     window.App = App;
 }) (window);
