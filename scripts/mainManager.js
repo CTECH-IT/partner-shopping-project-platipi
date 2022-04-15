@@ -10,7 +10,7 @@
     let Cart = App.Cart;
     let DataStore = App.DataStore;
     let FormHandler = App.FormHandler;
-   let CheckList = App.CheckList;
+    let CheckList = App.CheckList;
 
     let myCart = new Cart('12345', new DataStore());
     let checkList = new CheckList(CHECKLIST_SELECTOR);
