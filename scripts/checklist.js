@@ -2,6 +2,7 @@
     'use strict';
     let App = window.App || {};
     let $ = window.jQuery;
+
     function CheckList(selector) {
         if (!selector) {
             throw new Error('No selector provided');
@@ -34,7 +35,7 @@
     CheckList.prototype.addRow = function (shoppingOrder) {
         // Remove any existing rows that match the email address
         this.removeRow(shoppingOrder.emailAddress);
-        // Create a new instance of a row, using the coffee order info
+        // Create a new instance of a row, using the shopping order info
         var rowElement = new Row(shoppingOrder);
         // Add the new row instance's $element propterty to the checklist
         this.$element.append(rowElement.$element);
@@ -52,6 +53,14 @@
             type: 'checkbox',
             value: shoppingOrder.emailAddress
         });
+
+        let description = shoppingOrder.size + ' ';
+        if (shoppingOrder.flavor) {
+            description += shoppingOrder.flavor + ' ';
+        }
+        description += shoppingOrder.shopping + ', ';
+        description += ' (' + shoppingOrder.emailAddress + ')';
+        description += ' [' + shoppingOrder.strength + 'x]';
 
         $label.append($checkbox);
         $label.append(description);

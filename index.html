@@ -27,7 +27,7 @@
       <div class="checklist">
         <div class="form-check">
         
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <input class="form-check-input" type="checkbox" value="sock" id="defaultCheck1">
           <label class="form-check-label" for="defaultCheck1">
             <img class="image" src="image/aSock.jpg">
             A sock
@@ -76,10 +76,19 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 
+  <div class="card card-default">
+    <div class="card-body">
+        <h4>Incoming Orders:</h4>
+        <div data-shopping-order="checklist">
+        </div>
+    </div>
+</div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
   <script src="scripts/datastore.js" charset="utf-8"></script>
   <script src="scripts/formhandler.js" charset="utf-8"></script>
-  <script src="scripts/truck.js" charset="utf-8"></script>
+  <script src="scripts/cart.js" charset="utf-8"></script>
   <script src="scripts/main.js" charset="utf-8"></script>
+  <script src="scripts/checklist.js" charset="utf-8"></script>
 </body>
 </html>
