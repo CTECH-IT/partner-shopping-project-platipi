@@ -9,6 +9,7 @@
         this.$element = $(selector);
         if (this.$element.length === 0) {
             throw new Error('Could not find element with selector: ' + selector);
+            
         }
     }
 
@@ -33,7 +34,7 @@
     // the method that adds a new row to the checklist
     CheckList.prototype.addRow = function (shoppingOrder) {
         // Remove any existing rows that match the email address
-        this.removeRow(shoppingOrder.emailAddress);
+        //this.removeRow(shoppingOrder.emailAddress);
         // Create a new instance of a row, using the coffee order info
         var rowElement = new Row(shoppingOrder);
         // Add the new row instance's $element propterty to the checklist
@@ -44,7 +45,7 @@
     function Row(shoppingOrder) {
         let $div = $('<div></div>', {
             'data-shopping-order': 'checkbox',
-            'class': 'checkbox'
+            //'class': 'checkbox'
         });
         let $label = $('<label></label>');
 
@@ -52,15 +53,24 @@
             type: 'checkbox',
             value: shoppingOrder.emailAddress
         });
+        let description = shoppingOrder.order + ' ';
+        
+        
+        description += ' (' + shoppingOrder.emailAddress + ')';
+        
 
         $label.append($checkbox);
-        //$label.append(description);
+        $label.append(description);
         $div.append($label);
 
         this.$element = $div;
     }
 
+    
+
     // Add the Checklist to the App namespace
     App.CheckList = CheckList;
     window.App = App;
+
+
 })(window);

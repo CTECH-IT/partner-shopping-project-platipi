@@ -4,7 +4,7 @@
     const FORM_SELECTOR = '[data-shopping-order="form"]';
     const CHECKLIST_SELECTOR = '[data-shopping-order="checklist"]';
     const SERVER_URL = 'http://saturn.rochesterschools.org:8080/json';
-
+    const MANAGER_URL = 'http://127.0.0.1:5500/manager.html'
 
 
     let App = window.App;
