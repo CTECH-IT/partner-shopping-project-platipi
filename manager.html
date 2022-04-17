@@ -1,5 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE public_html>
 <html lang="en" dir="ltr">
+
+    <link rel="stylesheet" type="text/css" href="index.html">
 
 <head>
     <meta charset="utf-8">
@@ -7,14 +9,19 @@
     <meta name="author" content="Sam and Griffin">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css ">
-    <link rel="stylesheet" href="stylesheets/styles.css">
+    
 </head>
 
 <body class="container">
     
-    <header>
-        <h1 class="page-title">Platapi Shopping</h1>
-    </header>
+    <div class="card card-default">
+        <div class="card-body">
+          <h4>Incoming Orders:</h4>
+          <div data-shopping-order="checklist">
+          </div>
+        </div>
+      </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
     <script src="scripts/formhandler.js" charset="utf-8"></script>
@@ -22,7 +29,14 @@
     <script src="scripts/cart.js" charset="utf-8"></script>
     <script src="scripts/checklist.js" charset="utf-8"></script>
     <script src="scripts/remotedatastore.js" charset="utf-8"></script>
-    <script src="scripts/main.js" charset="utf-8"></script>
+    <script src="scripts/manager.js" charset="utf-8"></script>
+
+   
 </body>
 
+
+
+
+
 </html>
+

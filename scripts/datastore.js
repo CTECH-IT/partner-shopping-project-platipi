@@ -4,7 +4,7 @@
     let App = window.App || {};
 
     function DataStore() {
-        //console.log('Running the DataStore function...')
+        console.log('Running the DataStore function...')
         this.data = {};
     }
 
