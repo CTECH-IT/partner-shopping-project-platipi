@@ -32,8 +32,8 @@
             console.log(data);
             func(data); //call function passed down in data from form
 
-           // this.reset(); //reset form
-            //this.elements[0].focus(); //focus on the first field
+            this.reset(); //reset form
+            this.elements[0].focus(); //focus on the first field
         });
 
         FormHandler.prototype.addInputHandler = function (func) {
