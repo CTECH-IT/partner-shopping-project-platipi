@@ -17,17 +17,17 @@
     let remoteDS = new RemoteDataStore(SERVER_URL);
 
     let myCart = new Cart('12345', remoteDS);
-    let checkList = new CheckList(CHECKLIST_SELECTOR);
+    //let checkList = new CheckList(CHECKLIST_SELECTOR);
 
     window.myCart = myCart;
 
    let formHandler = new FormHandler(FORM_SELECTOR);
 
-   checkList.addClickHandler(myCart.deliverOrder.bind(myCart));
+   //checkList.addClickHandler(myCart.deliverOrder.bind(myCart));
 
    formHandler.addSubmitHandler(function (data) {
         myCart.createOrder.call(myCart, data);
-        checkList.addRow.call(checkList, data);
+        //checkList.addRow.call(checkList, data);
     });
 
 })(window);
