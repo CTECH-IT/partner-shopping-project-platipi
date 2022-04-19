@@ -52,9 +52,13 @@
             type: 'checkbox',
             value: shoppingOrder.emailAddress
         });
+        let description = shoppingOrder.order + ' ';
+
+        description += shoppingOrder.order + ' ';
+        description += ' (' + shoppingOrder.emailAddress + ')';
 
         $label.append($checkbox);
-        //$label.append(description);
+        $label.append(description);
         $div.append($label);
 
         this.$element = $div;
