@@ -52,9 +52,19 @@
             type: 'checkbox',
             value: shoppingOrder.emailAddress
         });
+
         let description = shoppingOrder.order + ' ';
 
-        description += shoppingOrder.order + ' ';
+        if (shoppingOrder.aSock) {
+            description += shoppingOrder.aSock + ' ';
+        }
+        if (shoppingOrder.aRock) {
+            description += shoppingOrder.aLock + ' ';
+        }
+        if (shoppingOrder.aLock) {
+            description += shoppingOrder.aLock + ' ';
+        }
+        
         description += ' (' + shoppingOrder.emailAddress + ')';
 
         $label.append($checkbox);
