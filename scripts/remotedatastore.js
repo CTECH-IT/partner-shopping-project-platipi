@@ -48,7 +48,7 @@ let CheckList = App.CheckList;
 
     RemoteDataStore.prototype.remove = function (key) {
         // call the server url using the ajax 'DELETE' command
-        $.ajax(serverUrl + '?emailAddress=' + key, { type: 'DELETE' });
+        $.ajax(this.serverUrl + '?emailAddress=' + key, { type: 'DELETE' });
     };
 
     App.RemoteDataStore = RemoteDataStore;
