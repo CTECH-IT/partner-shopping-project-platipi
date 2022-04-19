@@ -46,9 +46,9 @@
       
       
       <div class="checklist">
-        <div class="form-check">
+        <div class="form-check" name="order">
         
-          <input class="form-check-input" type="checkbox" name="order" value="a sock" id="defaultCheck1">
+          <input class="form-check-input" type="checkbox" value="a sock" id="defaultCheck1">
           <label class="form-check-label" for="defaultCheck1">
             <img class="image" src="image/aSock.jpg">
             A sock
@@ -56,14 +56,14 @@
         </div>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" name="order" value="a rock" id="defaultCheck1">
+        <input class="form-check-input" type="checkbox"  value="a rock" id="defaultCheck1">
         <label class="form-check-label" for="defaultCheck2">
           <img class="image" src="image/aRock.jpg">
           A rock
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" name="order" value="a lock" id="defaultCheck1">
+        <input class="form-check-input" type="checkbox"  value="a lock" id="defaultCheck1">
         <label class="form-check-label" for="defaultCheck3">
           <img class="image" src="image/aLock.jpg">
           A lock
@@ -71,6 +71,15 @@
       </div>
     </div>
   </div>
+<!--<div class ="hidden">
+  <div class="card card-default">
+    <div class="card-body">
+      <h4>Incoming Orders:</h4>
+      <div data-shopping-order="checklist">
+      </div>
+    </div>
+  </div>
+</div>-->
 
     
     <div class="form-check">
@@ -87,9 +96,10 @@
   <script src="scripts/datastore.js" charset="utf-8"></script>
   <script src="scripts/formhandler.js" charset="utf-8"></script>
   <script src="scripts/cart.js" charset="utf-8"></script>
-  <!--<script src="scripts/checklist.js" charset="utf-8"></script>-->
+  <!-- <script src="scripts/checklist.js" charset="utf-8"></script> -->
   <script src="scripts/remotedatastore.js" charset="utf-8"></script>
   <script src="scripts/dataWithHandlers.js" charset="utf-8"></script>
+  <!--<script src="scripts/manager.js" charset="utf-8"></script>-->
   <script src="scripts/main.js" charset="utf-8"></script>
 </body>
 </html>

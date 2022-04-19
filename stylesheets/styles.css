@@ -3,3 +3,7 @@
 .image {
 height: 100px;
 }
+
+.hidden {
+    visibility: hidden;
+}
