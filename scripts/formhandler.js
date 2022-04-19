@@ -27,7 +27,7 @@
             $(this).serializeArray().forEach(function (item) {
                 data[item.name] = item.value;
                 console.log(item.name + ' is ' + item.value);
-                func(data);
+                
             });
             console.log(data);
             func(data); //call function passed down in data from form

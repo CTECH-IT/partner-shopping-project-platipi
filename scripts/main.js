@@ -16,6 +16,14 @@
 
     let remoteDS = new RemoteDataStore(SERVER_URL);
 
+    RemoteDataStore.prototype.add = function (key, val) {
+        // Call jQuery's $.post method to send the value to the serverUrl
+        // When the server responds, call an anonymous function with serverResponse
+        $.post(serverUrl, val, function (serverResponse) {
+            console.log(serverResponse);
+        });
+    };
+
     let myCart = new Cart('12345', remoteDS);
     //let checkList = new CheckList(CHECKLIST_SELECTOR);
 
@@ -29,5 +37,15 @@
         myCart.createOrder.call(myCart, data);
         //checkList.addRow.call(checkList, data);
     });
+
+    if (formHandler !== undefined) {
+        let formHandler = new FormHandler(FORM_SELECTOR);
+
+        formHandler.addSubmitHandler(function (data) {
+            myCart.createOrder.call(myCart, data);
+        });    
+    } else if (CheckList !== undefined) {
+        let checkList = new CheckList(CHECKLIST_SELECTOR);
+    }
 
 })(window);
