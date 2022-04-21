@@ -23,7 +23,7 @@
 
     window.myCart = myCart;
 
-    let checkList = new CheckList(CHECKLIST_SELECTOR);
+    // let checkList = new CheckList(CHECKLIST_SELECTOR);
 
 
 
@@ -37,16 +37,16 @@
         formHandler.addSubmitHandler(function (data) {
             myCart.createOrder.call(myCart, data);
         });    
-    } else if (CheckList !== undefined) {
-        let checkList = new CheckList(CHECKLIST_SELECTOR);
+    //} else if (CheckList !== undefined) {
+    //    let checkList = new CheckList(CHECKLIST_SELECTOR);
 
-        remoteDS.getAll((orders) => {
-            for (let order of Object.values(orders)) {
-                checkList.addRow(order);
-            }
-        })
+    //    remoteDS.getAll((orders) => {
+    //        for (let order of Object.values(orders)) {
+    //            checkList.addRow(order);
+    //        }
+    //    })
     }
 
-    checkList.addClickHandler(remoteDS.remove.bind(remoteDS));
+    //checkList.addClickHandler(remoteDS.remove.bind(remoteDS));
 
 })(window);
