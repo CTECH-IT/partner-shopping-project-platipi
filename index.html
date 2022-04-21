@@ -17,86 +17,88 @@
 
 <link rel="stylesheet" type="text/css" href="manager.html">
 
-  <body class="container" bg="primary">
-    <header>
-      <h1 class="page-title">Platapi Shopping</h1>
-    </header>
+<body class="container">
+  <header>
+    <h1 class="page-title">Platapi Shopping</h1>
+  </header>
 
 
-    <div class="card card-default">
-      <div class="card-body">
-        <form data-shopping-order="form">
-          <label for="shoppingOrder"> Name:</label>
 
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="First name">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Last name">
-            </div>
+  <div class="card card-default">
+    <div class="card-body">
+      <form data-shopping-order="form">
+        <label for="shoppingOrder"> Name:</label>
+
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label for="emailInput">Email address:</label>
+          <input name="emailAddress" type="email" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll probably sell your email to Russian hackers
+            :)</small>
+        </div>
+        <label for="form-check">Shopping thingies:</label>
+
+
+        <div class="checklist">
+          <div class="form-check">
+
+
+            <input class="form-check-input" type="checkbox" name="order" value="a sock" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              <img class="image" src="image/aSock.png">
+              A sock
+            </label>
           </div>
 
-
-          <div class="form-group">
-            <label for="emailInput">Email address:</label>
-            <input name="emailAddress" type="email" class="form-control" id="exampleInputEmail1"
-              aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll probably sell your email to Russian hackers
-              :)</small>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="order" value="a rock" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck2">
+              <img class="image" src="image/aRock.png">
+              A rock
+            </label>
           </div>
-          <label for="form-check">Shopping thingies:</label>
-
-
-          <div class="checklist">
-            <div class="form-check">
-
-
-              <input class="form-check-input" type="checkbox" name="order" value="a sock" id="defaultCheck1">
-              <label class="form-check-label" for="defaultCheck1">
-                <img class="image" src="image/aSock.png">
-                A sock
-              </label>
-            </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="order" value="a rock" id="defaultCheck1">
-              <label class="form-check-label" for="defaultCheck2">
-                <img class="image" src="image/aRock.png">
-                A rock
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="order" value="a lock" id="defaultCheck1">
-              <label class="form-check-label" for="defaultCheck3">
-                <img class="image" src="image/aLock.png">
-                A lock
-              </label>
-            </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="order" value="a lock" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck3">
+              <img class="image" src="image/aLock.png">
+              A lock
+            </label>
           </div>
-      </div>
+        </div>
     </div>
-
-
-    <div class="form-check">
-
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-
-
-    <a href="http://127.0.0.1:5500/manager.html">managers</href>
+  </div>
 
 
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
-      <script src="scripts/datastore.js" charset="utf-8"></script>
-      <script src="scripts/formhandler.js" charset="utf-8"></script>
-      <script src="scripts/cart.js" charset="utf-8"></script>
-      <!--<script src="scripts/checklist.js" charset="utf-8"></script>-->
-      <script src="scripts/remotedatastore.js" charset="utf-8"></script>
-      <script src="scripts/dataWithHandlers.js" charset="utf-8"></script>
-      <script src="scripts/main.js" charset="utf-8"></script>
-  </body>
+  <div class="form-check">
+
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+
+  <a href="http://127.0.0.1:5500/manager.html">managers</href>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="scripts/datastore.js" charset="utf-8"></script>
+    <script src="scripts/formhandler.js" charset="utf-8"></script>
+    <script src="scripts/cart.js" charset="utf-8"></script>
+    <script src="scripts/checklist.js" charset="utf-8"></script>
+    <script src="scripts/remotedatastore.js" charset="utf-8"></script>
+    <script src="scripts/dataWithHandlers.js" charset="utf-8"></script>
+    <script src="scripts/main.js" charset="utf-8"></script>
+</body>
 
 </html>
