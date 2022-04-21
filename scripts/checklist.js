@@ -43,6 +43,7 @@
 
     // Each row is one outstanding order
     function Row(shoppingOrder) {
+        if (shoppingOrder.sam == 'sam') {
         let $div = $('<div></div>', {
             'data-shopping-order': 'checkbox',
             'class': 'checkbox'
@@ -74,6 +75,7 @@
         $div.append($label);
 
         this.$element = $div;
+    }
     }
 
     // Add the Checklist to the App namespace
