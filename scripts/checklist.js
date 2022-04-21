@@ -59,13 +59,14 @@
             description += shoppingOrder.aSock + ' ';
         }
         if (shoppingOrder.aRock) {
-            description += shoppingOrder.aLock + ' ';
+            description += shoppingOrder.aRock + ' ';
         }
         if (shoppingOrder.aLock) {
             description += shoppingOrder.aLock + ' ';
         }
         
-        description += ' (' + shoppingOrder.emailAddress + ')';
+        //description += shoppingOrder.order +', ';
+        description += shoppingOrder.emailAddress;
 
         $label.append($checkbox);
         $label.append(description);
