@@ -34,6 +34,7 @@
     CheckList.prototype.addRow = function (shoppingOrder) {
         // Remove any existing rows that match the email address
         this.removeRow(shoppingOrder.emailAddress);
+       
         // Create a new instance of a row, using the coffee order info
         var rowElement = new Row(shoppingOrder);
         // Add the new row instance's $element propterty to the checklist
@@ -53,20 +54,21 @@
             value: shoppingOrder.emailAddress
         });
 
-        let description = shoppingOrder.order + ' ';
+        let description = shoppingOrder.emailAddress + ' ';
 
         if (shoppingOrder.aSock) {
             description += shoppingOrder.aSock + ' ';
         }
         if (shoppingOrder.aRock) {
-            description += shoppingOrder.aLock + ' ';
+            description += shoppingOrder.aRock + ' ';
         }
         if (shoppingOrder.aLock) {
             description += shoppingOrder.aLock + ' ';
         }
         
-        description += ' (' + shoppingOrder.emailAddress + ')';
-
+        //description += shoppingOrder.order +', ';
+    
+    
         $label.append($checkbox);
         $label.append(description);
         $div.append($label);
