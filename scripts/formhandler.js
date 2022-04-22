@@ -29,7 +29,7 @@
                 console.log(item.name + ' is ' + item.value);
                 
             });
-            data.sam = 'sam';
+            data.platipi = 'platipi';
             console.log(data);
             func(data); //call function passed down in data from form
 

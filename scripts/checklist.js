@@ -43,7 +43,7 @@
 
     // Each row is one outstanding order
     function Row(shoppingOrder) {
-        if (shoppingOrder.sam == 'sam') {
+        if (shoppingOrder.platipi == 'platipi') {
         let $div = $('<div></div>', {
             'data-shopping-order': 'checkbox',
             'class': 'checkbox'
